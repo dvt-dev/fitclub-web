@@ -1,0 +1,29 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 10rem;
+  height: 3rem;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem
+}
+
+.navbar__link {
+  color: var(--white);
+}
+
+.navbar__link:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
