@@ -1,0 +1,36 @@
+
+.footer__container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+
+.footer__logo {
+  width: 10rem;
+  height: 3rem;
+}
+
+.footer__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.copyright {
+  letter-spacing: 2px;
+  margin-right: 4rem;
+}
+
+.footer__social {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__social-icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

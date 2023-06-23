@@ -14,19 +14,34 @@ const Header = () => {
             <nav className={cx("navbar")}>
                 <ul className={cx("navbar__list")}>
                     <li className={cx("navbar__item")}>
-                        <a className={cx("navbar__link")}>Home</a>
+                        <a href="#" className={cx("navbar__link")}>
+                            Home
+                        </a>
                     </li>
                     <li className={cx("navbar__item")}>
-                        <a className={cx("navbar__link")}>Program</a>
+                        <a href="#programs" className={cx("navbar__link")}>
+                            Program
+                        </a>
                     </li>
                     <li className={cx("navbar__item")}>
-                        <a className={cx("navbar__link")}>Why us</a>
+                        <a href="#reasons" className={cx("navbar__link")}>
+                            Why us
+                        </a>
                     </li>
                     <li className={cx("navbar__item")}>
-                        <a className={cx("navbar__link")}>Plans</a>
+                        <a href="#plans" className={cx("navbar__link")}>
+                            Plans
+                        </a>
                     </li>
                     <li className={cx("navbar__item")}>
-                        <a className={cx("navbar__link")}>Testimonials</a>
+                        <a href="#testimonials" className={cx("navbar__link")}>
+                            Testimonials
+                        </a>
+                    </li>
+                    <li className={cx("navbar__item")}>
+                        <a href="#contact" className={cx("navbar__link")}>
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </nav>
