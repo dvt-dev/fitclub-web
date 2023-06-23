@@ -68,7 +68,7 @@ const Testimonials = () => {
                     alt="author-img"
                     className={cx("author-img")}
                 />
-                <div className={cx("arrow")}>
+                <div className={cx("arrows")}>
                     <i
                         className={cx("arrow-left")}
                         onClick={() => {

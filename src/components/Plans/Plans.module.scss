@@ -127,3 +127,27 @@
 .plan__item-btn:hover {
   opacity: 0.8;
 }
+
+// Responsive mobile
+
+@media screen and (max-width: 768px) {
+  .plans__title {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .plans__title {
+    font-size: 2.5rem;
+  }
+
+  .plans__list {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .plan__item:nth-child(2) {
+    transform: none;
+  }
+}

@@ -189,3 +189,91 @@
   color: var(--white);
   font-size: 1.5rem;
 }
+
+// Responsive mobile
+
+@media screen and (max-width: 768px) {
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-blur {
+    width: 14rem;
+  }
+
+  .the-best--ad {
+    margin: 0 auto;
+  }
+
+  .hero__heading {
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .figures__item {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .figures__item-number {
+    font-size: 1.5rem;
+  }
+
+  .figures__item-des {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
+
+  .hero__right {
+    position: relative;
+    background: none;
+  }
+
+  .heart-rate {
+    left: 1rem;
+    top: 2rem;
+  }
+
+  .calories {
+    position: relative;
+    top: 6rem;
+    left: 10rem;
+  }
+
+  .calories-img {
+    width: 2rem;
+  }
+
+  .calories-text {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    top: 4rem;
+    align-self: center;
+  }
+
+  .hero-image-back {
+    width: 15rem;
+    left: 2rem;
+    top: 0;
+  }
+
+  .btn-join {
+    right: 2rem;
+  }
+
+}

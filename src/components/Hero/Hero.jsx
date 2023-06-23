@@ -17,6 +17,7 @@ const cx = classname.bind(styles);
 
 const Hero = () => {
     const transition = { type: "spring", duration: 3 };
+    const mobile = window.innerWidth <= 768 ? true : false;
     return (
         <div className={cx("hero__wrapper")}>
             <div className={cx("hero__container")}>
@@ -56,7 +57,7 @@ const Hero = () => {
                     <div className={cx("figures")}>
                         <div className={cx("figures__item")}>
                             <span className={cx("figures__item-number")}>
-                                <span>+ </span>
+                                <span>+</span>
                                 <CountUp start={100} end={140} duration={4} />
                             </span>
                             <span className={cx("figures__item-des")}>
@@ -65,7 +66,7 @@ const Hero = () => {
                         </div>
                         <div className={cx("figures__item")}>
                             <span className={cx("figures__item-number")}>
-                                <span>+ </span>
+                                <span>+</span>
                                 <CountUp start={888} end={978} duration={4} />
                             </span>
                             <span className={cx("figures__item-des")}>
@@ -74,7 +75,7 @@ const Hero = () => {
                         </div>
                         <div className={cx("figures__item")}>
                             <span className={cx("figures__item-number")}>
-                                <span>+ </span>
+                                <span>+</span>
                                 <CountUp start={0} end={50} duration={4} />
                             </span>
                             <span className={cx("figures__item-des")}>
@@ -96,8 +97,10 @@ const Hero = () => {
 
                     <motion.div
                         className={cx("heart-rate")}
-                        initial={{ right: "-1rem" }}
-                        whileInView={{ right: "4rem" }}
+                        initial={mobile ? { left: "0" } : { right: "-1rem" }}
+                        whileInView={
+                            mobile ? { left: "2rem" } : { right: "4rem" }
+                        }
                         transition={transition}
                     >
                         <div className={cx("heart-icon")}>
@@ -125,8 +128,10 @@ const Hero = () => {
                     {/* calories */}
                     <motion.div
                         className={cx("calories")}
-                        initial={{ right: "32rem" }}
-                        whileInView={{ right: "28rem" }}
+                        initial={mobile ? { left: "2rem" } : { right: "32rem" }}
+                        whileInView={
+                            mobile ? { left: "9rem" } : { right: "28rem" }
+                        }
                         transition={transition}
                     >
                         <img
@@ -135,12 +140,8 @@ const Hero = () => {
                             className={cx("calories-img")}
                         />
                         <div className={cx("calories-text")}>
-                            <span>
-                                Calories <br /> burned
-                            </span>
-                            <span>
-                                220 <br /> kcal
-                            </span>
+                            <span>Calories burned</span>
+                            <span>220 kcal</span>
                         </div>
                     </motion.div>
                 </div>

@@ -60,9 +60,6 @@
 }
 
 .reasons__right-title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
   font-size: 3rem;
   font-weight: 700;
   color: var(--white);
@@ -104,5 +101,44 @@
 .partners-img {
   width: 2.5rem;
   margin-right: 1rem;
+}
+
+// Responsive mobile
+
+@media screen and (max-width: 768px) {
+  .reasons__wrapper {
+    flex-direction: column;
+  }
+
+  .reasons__left {
+    grid-auto-rows: auto;
+  }
+
+  .reasons__right-title {
+    font-size: 2.5rem;
+  }
+
+  .reasons__img:nth-of-type(1) {
+    width: 7rem;
+    height: 17rem;
+  }
+
+  .reasons__img:nth-of-type(2) {
+    width: 14rem;
+    height: 10rem;
+  }
+
+  .reasons__img:nth-of-type(3){
+    width: 7rem;
+    height: 6rem;
+  }
+
+  .reasons__img:nth-of-type(4) {
+    width: 6rem;
+    height: 6rem;
+  }
+  .reasons__right-title {
+    flex-direction: column;
+  }
 }
 
