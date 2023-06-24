@@ -13,6 +13,8 @@ const Testimonials = () => {
     const transition = { type: "spring", duration: 3 };
     const [selected, setSelected] = useState(0);
     const lenght = testimonialsData.length;
+
+    const isMobile = window.innerWidth <= 768 ? true : false;
     return (
         <section className={cx("testimonials__wrapper")} id="testimonials">
             <div className={cx("testimonials__left")}>
@@ -77,7 +79,7 @@ const Testimonials = () => {
                                 : setSelected((prev) => prev - 1);
                         }}
                     >
-                        <FaArrowLeft fontSize={26} />
+                        <FaArrowLeft fontSize={35} />
                     </i>
                     <i
                         className={cx("arrow-right")}
@@ -87,7 +89,7 @@ const Testimonials = () => {
                                 : setSelected((prev) => prev + 1);
                         }}
                     >
-                        <FaArrowRight fontSize={26} />
+                        <FaArrowRight fontSize={35} />
                     </i>
                 </div>
             </div>

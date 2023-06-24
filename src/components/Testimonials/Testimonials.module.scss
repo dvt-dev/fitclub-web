@@ -113,6 +113,10 @@
     flex-direction: column;
   }
 
+  .testimonials__left-title {
+    gap: 0.5rem;
+  }
+
   .testimonials__left-review {
     letter-spacing: 1px;
   }
@@ -142,7 +146,7 @@
   }
 
   .arrows {
-    top: 24rem;
+    top: 25rem;
     left: auto;
   }
 }

@@ -34,3 +34,21 @@
   cursor: pointer;
   opacity: 0.8;
 }
+
+// Responsive on mobile 
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer__nav-list {
+    gap: 0.8rem;
+  }
+
+  .copyright {
+    margin-right: 0;
+  }
+  
+}

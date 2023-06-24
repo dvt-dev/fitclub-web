@@ -58,3 +58,35 @@
   opacity: 0.8;
 }
 
+// Responsive on mobile
+
+@media screen and (max-width: 768px) {
+  .contact__wrapper {
+    margin-top: 3rem;
+  }
+
+  .contact__container {
+    flex-direction: column;
+  }
+  
+  .contact__title {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+  }
+
+  .contact__container {
+    gap: 2rem;
+  }
+
+  .contact__input {
+    margin-right: auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+  
+}
+
