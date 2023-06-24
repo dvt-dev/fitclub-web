@@ -202,6 +202,13 @@
     width: 14rem;
   }
 
+  .hero__left-content {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .the-best--ad {
     margin: 0 auto;
   }
