@@ -12,19 +12,22 @@ const cx = classnames.bind(styles);
 const Header = () => {
     const isMobile = window.innerWidth <= 768 ? true : false;
     const [menuOpened, setMenuOpened] = useState(false);
+    console.log(menuOpened);
     const getMenuStyles = (menuOpened) => {
         if (isMobile) {
-            return { right: !menuOpened && "-100%" };
+            return { transform: !menuOpened && "translateX(100%)" };
         }
     };
     return (
         <section className={cx("header__wrapper")}>
             <img src={Logo} alt="Logo" className={cx("header__logo")} />
+
             {isMobile === true && menuOpened === true ? (
                 <label className={cx("mobile-overlay")}></label>
             ) : (
                 <div></div>
             )}
+
             <OutsideClickHandler onOutsideClick={() => setMenuOpened(false)}>
                 <nav className={cx("navbar")} style={getMenuStyles(menuOpened)}>
                     <ul className={cx("navbar__list")}>
@@ -81,16 +84,16 @@ const Header = () => {
                         </li>
                     </ul>
                 </nav>
+                <button
+                    className={cx("mobile-menu-icon")}
+                    onClick={() => {
+                        setMenuOpened(!menuOpened);
+                        console.log(menuOpened);
+                    }}
+                >
+                    <HiBars3 fontSize={32} color="#fff" />
+                </button>
             </OutsideClickHandler>
-            <button
-                className={cx("mobile-menu-icon")}
-                onClick={() => {
-                    setMenuOpened(!menuOpened);
-                    console.log(menuOpened);
-                }}
-            >
-                <HiBars3 fontSize={32} color="#fff" />
-            </button>
         </section>
     );
 };

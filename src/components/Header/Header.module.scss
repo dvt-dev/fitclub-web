@@ -36,6 +36,9 @@
   display: none;
 }
 
+
+
+
 // Responsive on mobile 
 @media screen and (max-width: 768px) {
   .header__wrapper {
@@ -61,8 +64,10 @@
     right: 0;
     z-index: 99;
     width: 60%;
-    transform: translateX(0);
+    animation: fadeIn  .3s linear;
   }
+
+  
 
   .navbar__list {
     width: 100%;
@@ -70,7 +75,6 @@
     background-color: #46484b;
     gap: 0;
     align-items: start;
-    animation: fadeIn linear .5s;
   }
 
   .navbar__item {
@@ -86,6 +90,7 @@
   .mobile-menu-icon {
     display: block;
     position: fixed;
+    top: 1rem;
     right: 2rem;
     padding: 0.5rem;
     display: flex;
