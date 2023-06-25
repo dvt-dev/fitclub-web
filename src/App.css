@@ -46,7 +46,7 @@ ul {
   border: 2px solid var(--orange);
   padding: 0.8rem 0.5rem;
   background-color: transparent;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--white);
   transition: 300ms all;

@@ -23,17 +23,17 @@ const Footer = () => {
                             />
                         </li>
                         <li className={cx("footer__nav-item")}>
-                            <a href="" className={cx("footer__nav-link")}>
+                            <a href="#" className={cx("footer__nav-link")}>
                                 Programs
                             </a>
                         </li>
                         <li className={cx("footer__nav-item")}>
-                            <a href="" className={cx("footer__nav-link")}>
+                            <a href="#" className={cx("footer__nav-link")}>
                                 Privacy
                             </a>
                         </li>
                         <li className={cx("footer__nav-item")}>
-                            <a href="" className={cx("footer__nav-link")}>
+                            <a href="#" className={cx("footer__nav-link")}>
                                 Terms
                             </a>
                         </li>

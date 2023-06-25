@@ -24,7 +24,7 @@ const Reasons = () => {
                 <img src={image4} alt="" className={cx("reasons__img")} />
             </div>
             <div className={cx("reasons__right")}>
-                <p className={cx("reasons__right-heading")}>Some reasons</p>
+                <h3 className={cx("reasons__right-heading")}>Some reasons</h3>
                 <div className={cx("reasons__right-content")}>
                     <div className={cx("reasons__right-title")}>
                         <span className={cx("stroke-text")}>Why </span>

@@ -17,7 +17,7 @@ const cx = classname.bind(styles);
 
 const Hero = () => {
     const transition = { type: "spring", duration: 3 };
-    const mobile = window.innerWidth <= 768 ? true : false;
+    const mobile = window.innerWidth <= 1023 ? true : false;
     return (
         <div className={cx("hero__wrapper")}>
             <div className={cx("hero__container")}>

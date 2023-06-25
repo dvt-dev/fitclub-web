@@ -128,6 +128,23 @@
   opacity: 0.8;
 }
 
+
+// Respnsive on table 
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .plans__title {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+
+  .more-information {
+    font-size: 1.1rem;
+  }
+  
+}
+
 // Responsive mobile
 
 @media screen and (max-width: 768px) {

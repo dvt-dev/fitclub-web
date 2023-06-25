@@ -15,7 +15,7 @@ const Header = () => {
     console.log(menuOpened);
     const getMenuStyles = (menuOpened) => {
         if (isMobile) {
-            return { transform: !menuOpened && "translateX(100%)" };
+            return { right: !menuOpened && "-100%" };
         }
     };
     return (

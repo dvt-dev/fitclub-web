@@ -106,7 +106,39 @@
   opacity: 0.8;
 }
 
-// Responsive mobile 
+// Responsive on tablet
+
+@media (min-width: 767px) and (max-width: 1023px) {
+
+  .testimonials__left-content {
+    height: 12rem;
+  }
+
+  .testimonials__right {
+    margin-top: 3rem;
+  }
+
+  .testimonials__right>div:nth-of-type(1) {
+    right: 2rem;
+  }
+
+  .testimonials__right>div:nth-of-type(2) {
+    right: 0;
+  }
+
+  .author-img {
+    right: 1rem;
+  }
+
+  .arrows {
+    top: 26rem;
+    left: 11rem;  
+  }
+
+
+}
+
+// Responsive on mobile 
 @media screen and (max-width: 768px) {
   .testimonials__wrapper {
     margin-top: -2rem;

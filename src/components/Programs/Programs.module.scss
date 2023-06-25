@@ -26,12 +26,15 @@
 .programs__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .program__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
   gap: 1rem;
   padding: 2rem;
   color: var(--white);
@@ -48,7 +51,6 @@
 }
 
 .program__item-des  {
-  font-size: 0.9;
   line-height: 25px;
 }
 
@@ -74,6 +76,24 @@
   font-size: 1.1rem;
   cursor: pointer;
   width: fit-content;
+}
+
+
+// Responsive on table 
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .programs__wrapper {
+    margin-top: 2rem;
+  }
+
+  .programs__header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .programs__header-text {
+    font-size: 4rem;
+  }
 }
 
 // Responsive on mobile
